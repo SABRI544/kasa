@@ -1,14 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
-import Logo from "../components/Logo";
-import Navigation from "../components/Navigation";
+import Logements from "../components/Logements";
 
 const Home = () => {
   return (
     <div>
-      <Logo />
-      <Navigation />
       <Header />
+      <Logements />
     </div>
   );
 };

@@ -1,12 +1,10 @@
 import React from "react";
-import Logo from "../components/Logo";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 const About = () => {
   return (
     <div>
-      <Logo />
-      <Navigation />
+      <Header />
       <h1>A Propos</h1>
       <br />
       <p>
