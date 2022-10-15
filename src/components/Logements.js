@@ -10,12 +10,12 @@ const Logements = () => {
 
   return (
     <div className="logements">
-      <h1>Logements</h1>
-      <ul>
-        {data.map((logements, index) => (
-          <li key={index}>{logements.id}</li>
-        ))}
-      </ul>
+      {data.map((logements, index) => (
+        <div className="card" key={index}>
+          <img src={logements.cover} alt="logements" />
+          <h3>{logements.title}</h3>
+        </div>
+      ))}
     </div>
   );
 };
