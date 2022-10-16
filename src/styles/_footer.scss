@@ -1,0 +1,30 @@
+footer {
+  position: relative;
+  width: 1440px;
+  height: 209px;
+
+  background: #000000;
+  display: flex;
+  justify-content: center;
+
+  .footer_logo {
+    position: absolute;
+  }
+  img {
+    padding-top: 50px;
+  }
+  p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}

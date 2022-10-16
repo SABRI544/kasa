@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
-
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 const About = () => {
   return (
     <div>
       <Header />
+      <Banner />
       <h1>A Propos</h1>
       <br />
       <p>
@@ -19,6 +21,7 @@ const About = () => {
         reiciendis natus tenetur repellat cumque repellendus, dolor consectetur
         debitis omnis modi.
       </p>
+      <Footer />
     </div>
   );
 };
