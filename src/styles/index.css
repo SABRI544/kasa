@@ -197,4 +197,45 @@ footer p {
   align-items: flex-end;
   text-align: center;
   color: #ffffff;
+}
+
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  width: 1023px;
+  max-height: 184px;
+  min-height: 80px;
+}
+
+.titre {
+  height: 47px;
+  width: 1023px;
+  color: white;
+  border-radius: 5px;
+  background: #ff6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  background: #f7f7f7;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.text .show {
+  height: auto;
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+
+.icone {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=index.css.map */

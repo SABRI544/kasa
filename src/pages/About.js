@@ -2,12 +2,18 @@ import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import Dropdown from "../components/Dropdown";
 const About = () => {
   return (
     <div>
       <Header />
-      <Banner />
-      <h1>A Propos</h1>
+      <Banner
+        imgsrc="./img/banniereabout.png"
+        altText="banniére montagne"
+        title=""
+      />
+
+      <Dropdown />
       <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi quam
