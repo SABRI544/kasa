@@ -21,30 +21,29 @@
   height: 340px;
   width: 340px;
   position: relative;
+}
+.card img {
+  object-fit: cover;
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+}
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
 
-  img {
-    object-fit: cover;
-    height: 340px;
-    width: 340px;
-    border-radius: 10px;
-  }
-  h3 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    /* or 26px */
+  display: flex;
+  align-items: flex-end;
 
-    display: flex;
-    align-items: flex-end;
+  color: #ffffff;
 
-    color: #ffffff;
-
-    position: absolute;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
-  }
+  position: absolute;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
 }

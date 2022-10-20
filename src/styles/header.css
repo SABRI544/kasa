@@ -19,19 +19,10 @@
   line-height: 34px;
   letter-spacing: 0em;
   text-align: right;
-
-  a:hover {
-    text-decoration: underline;
-  }
 }
-.logo {
-  img {
-    height: 68px;
-    width: 210.32154846191406px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-  }
+.logo img {
+  height: 68px;
+  width: 210.32154846191406px;
 }
 .nav-active {
   text-decoration: underline;

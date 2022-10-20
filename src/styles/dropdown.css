@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
 }
+.accordeon img {
+  padding-right: 5px;
+}
 .item {
   width: 1023px;
   max-height: 184px;

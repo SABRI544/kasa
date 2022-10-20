@@ -1,0 +1,30 @@
+h1 {
+  align-items: center;
+
+  color: #ff6060;
+}
+.infotitre {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.infolocation {
+  color: blue;
+}
+
+.containerdropdown {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.containerdropdown .description {
+  width: 82px;
+  height: 52px;
+}
+.containerdropdown .equipement {
+  width: 82px;
+  height: 52px;
+}

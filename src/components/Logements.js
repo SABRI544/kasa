@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Logements = () => {
   const [data, setData] = useState([]);
@@ -11,10 +12,12 @@ const Logements = () => {
   return (
     <div className="logements">
       {data.map((logements, index) => (
-        <div className="card" key={index}>
-          <img src={logements.cover} alt="logements" />
-          <h3>{logements.title}</h3>
-        </div>
+        <NavLink to={`/annonce/${logements.id}`} key={logements.id}>
+          <div className="card" key={index}>
+            <img src={logements.cover} alt="logements" />
+            <h3>{logements.title}</h3>
+          </div>
+        </NavLink>
       ))}
     </div>
   );
