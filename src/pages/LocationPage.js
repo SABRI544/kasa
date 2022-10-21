@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
+import Caroussel from "../components/Caroussel";
 
 const LocationPage = () => {
   const [data, setData] = useState({
@@ -40,7 +41,7 @@ const LocationPage = () => {
       <Header />
       <main>
         <div>
-          <img src={data.cover} alt="logements" />
+          <Caroussel pictures={data.pictures} title={data.title} />
         </div>
 
         <div className="info">

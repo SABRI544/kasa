@@ -15,7 +15,7 @@ const Dropdown = ({ titre, text }) => {
               {selected ? (
                 <img className="icone" src="./img/Vector.png " alt="icone" />
               ) : (
-                <img src="./img/Vector.png " alt="icone" />
+                <img src="../img/Vector.png " alt="icone" />
               )}
             </span>
           </div>
