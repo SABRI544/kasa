@@ -5,23 +5,19 @@ const Dropdown = ({ titre, text }) => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div>
-      <div className="accordeon">
-        <div className="item">
-          <div className="titre" onClick={() => setSelected(!selected)}>
-            <h2>{titre}</h2>
+    <div className="accordeon">
+      <div className="titre" onClick={() => setSelected(!selected)}>
+        <h2>{titre}</h2>
 
-            <span>
-              {selected ? (
-                <img className="icone" src="./img/Vector.png " alt="icone" />
-              ) : (
-                <img src="../img/Vector.png " alt="icone" />
-              )}
-            </span>
-          </div>
-          <div className={selected ? "show" : "text"}>{text}</div>
+        <div>
+          {selected ? (
+            <img className="icone" src="../img/Vector.png " alt="icone" />
+          ) : (
+            <img src="../img/Vector.png " alt="icone" />
+          )}
         </div>
       </div>
+      {selected && <div className="show">{text}</div>}
     </div>
   );
 };

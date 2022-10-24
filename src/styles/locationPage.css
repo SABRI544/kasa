@@ -1,30 +1,61 @@
-h1 {
-  align-items: center;
-
-  color: #ff6060;
-}
-.infotitre {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.infolocation {
-  color: blue;
-}
-
 .containerdropdown {
   display: flex;
 
   justify-content: center;
+
+  gap: 5%;
+  margin: 20px 7%;
+}
+.description {
+  width: 50%;
+
+  margin-bottom: 200px;
+}
+.equipements {
+  width: 50%;
+
+  margin-bottom: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 7%;
+}
+
+.infogauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infotitre h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+
+  color: #ff6060;
+}
+.infotitre h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  color: #ff6060;
+}
+.infodroite .host {
+  display: flex;
   align-items: center;
+  gap: 1%;
 }
-.containerdropdown .description {
-  width: 82px;
-  height: 52px;
+.infodroite p {
+  color: blue;
+  font-size: 16px;
 }
-.containerdropdown .equipement {
-  width: 82px;
-  height: 52px;
+.infodroite img {
+  width: 64px;
+
+  border-radius: 50%;
+}
+.fiche {
+  max-width: 1440px;
 }
