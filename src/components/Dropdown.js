@@ -17,7 +17,7 @@ const Dropdown = ({ titre, text }) => {
           )}
         </div>
       </div>
-      {selected && <div className="show">{text}</div>}
+      <div>{selected && <div className="show">{text}</div>}</div>
     </div>
   );
 };
