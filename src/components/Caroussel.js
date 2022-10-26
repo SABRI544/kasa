@@ -16,14 +16,14 @@ const Caroussel = (props) => {
     <section className="galerie">
       <div className="box">
         <img
-          onClick={() => setCurrent(prevSlide)}
+          onClick={() => prevSlide()}
           className="arrowback"
           src="../img/arrowback.png"
           alt="fleche de gauche"
         />
         <img src={pictures[current]} alt={title} className="galerieimg" />
         <img
-          onClick={() => setCurrent(nextSlide)}
+          onClick={() => nextSlide()}
           className="arrowforward"
           src="../img/arrowforward.png"
           alt="fleche de droite"

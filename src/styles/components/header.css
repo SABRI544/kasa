@@ -15,32 +15,37 @@
   font-weight: 500;
   line-height: 34px;
 
-  margin: 57px 0 80px 0;
+  margin: 57px 0 35px 0;
 }
 
 .logo img {
   height: 68px;
   width: 210.32154846191406px;
-  margin: 40px 0 63px 0;
+  margin: 40px 0 25px 0;
 }
 .nav-active {
   text-decoration: underline;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 980px) {
   .header-container {
     margin: 0 20px 0 20px;
   }
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 694px) {
   .navigation {
     margin: 38px 0 28px 0;
-
     font-size: 12px;
     font-weight: 500;
     line-height: 17px;
-
     text-align: right;
+    text-transform: uppercase;
+    height: 17px;
+    gap: 27px;
+  }
+
+  .navigation a:nth-child(1) {
+    text-decoration-line: underline;
   }
 
   .logo img {

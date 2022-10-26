@@ -1,13 +1,11 @@
 .avis {
   margin: 0 0 24px;
   text-align: right;
-
   display: flex;
+  justify-content: right;
 }
 .avis img {
   height: 30px;
   width: 30px;
-  left: 3px;
-  top: 3px;
-  border-radius: 0px;
+  margin-right: 5px;
 }

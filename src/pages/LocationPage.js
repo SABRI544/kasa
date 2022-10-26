@@ -17,7 +17,7 @@ const LocationPage = () => {
     rating: "",
     host: { name: "", picture: "" },
   });
-
+  const [error, setError] = useState(false);
   let { id } = useParams();
 
   useEffect(
@@ -29,14 +29,16 @@ const LocationPage = () => {
         .then((data) => {
           for (let i = 0; i < data.length; i++) {
             if (data[i].id === id) {
-              setData(data[i]);
+              return setData(data[i]);
             }
           }
+          setError(true);
         });
     },
     [id]
   );
-  if (!data.id) {
+
+  if (error) {
     return <Default404 />;
   } else {
     return (

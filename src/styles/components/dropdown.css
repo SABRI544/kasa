@@ -24,6 +24,7 @@
   line-height: 142.6%;
   color: #ff6060;
   padding: 20px;
+  min-height: 249px;
 }
 .icone {
   transform: rotate(180deg);
