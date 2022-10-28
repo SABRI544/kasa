@@ -4,48 +4,61 @@
   align-items: center;
 }
 
-p {
-  font-family: "Montserrat";
+.page-non-trouvée h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
-  line-height: 142.6%;
-  /* or 51px */
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
+  line-height: 51px;
   color: #ff6060;
+  text-align: center;
 }
 .lien {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 142.6%;
-  /* identical to box height, or 26px */
+  line-height: 26px;
 
-  display: flex;
-  align-items: flex-end;
   text-decoration-line: underline;
+  color: #ff6060;
+  position: relative;
+  top: 100px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 411px;
+
+  text-align: center;
 
   color: #ff6060;
 }
 
-h1 {
-  margin: 0;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 288px;
-  line-height: 142.6%;
-  /* or 411px */
+@media screen and (max-width: 694px) {
+  .page-non-trouvée {
+    margin-top: 190px;
+  }
+  .page-non-trouvée h1 {
+    font-size: 96px;
+    line-height: 137px;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-
-  color: #ff6060;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .page-non-trouvée h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 11px;
+    text-align: center;
+  }
+  .lien {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 133px;
+    text-align: left;
+  }
 }

@@ -1,5 +1,4 @@
 .galerie {
-  max-width: 1240px;
   position: relative;
   margin: 0 100px 0 100px;
 }
@@ -63,5 +62,8 @@
   }
   .nbtext {
     display: none;
+  }
+  .galerieimg {
+    border-radius: 10px;
   }
 }

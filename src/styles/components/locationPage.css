@@ -1,19 +1,15 @@
 .containerdropdown {
   display: flex;
-
   justify-content: center;
-
   gap: 5%;
   margin: 24px 100px 24px 100px;
 }
 .description {
   width: 50%;
-
   margin-bottom: 200px;
 }
 .equipements {
   width: 50%;
-
   margin-bottom: 200px;
 }
 
@@ -54,18 +50,12 @@
   color: #ff6060;
   margin: 5px;
   font-size: 18px;
-
   line-height: 26px;
-
   text-align: right;
 }
 .infodroite img {
   width: 64px;
-
   border-radius: 50%;
-}
-.fiche {
-  max-width: 1440px;
 }
 
 @media screen and (max-width: 980px) {
@@ -86,6 +76,7 @@
   .infotitre h2 {
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 12px;
   }
   .infotitre {
     display: flex;
@@ -94,7 +85,39 @@
   }
 
   .info {
-    margin-top: 0px;
+    margin: 15px 20px 0px 20px;
     flex-direction: column;
+  }
+
+  .infodroite {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  .infodroite .host {
+    margin-top: 15px;
+    margin-bottom: 16.5px;
+  }
+  .infodroite img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  .infodroite p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .containerdropdown {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+  }
+  .description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .equipements {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

@@ -4,11 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
   padding: 56px 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 43px;
+  margin: 0 100px 0 100px;
 }
 
 .card {
@@ -29,21 +27,27 @@
   border-radius: 10px;
 }
 h3 {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-  /* or 26px */
-
   display: flex;
   align-items: flex-end;
-
   color: #ffffff;
-
   position: absolute;
   left: 5.88%;
   right: 5.88%;
   top: 78.82%;
   bottom: 5.88%;
+}
+@media screen and (max-width: 694px) {
+  .logements {
+    margin: 0 20px 0 20px;
+    padding: 0;
+  }
+  .card,
+  .card img {
+    height: 335px;
+    width: 255px;
+  }
 }

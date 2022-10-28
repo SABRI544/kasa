@@ -7,7 +7,7 @@ const Default404 = () => {
       <Header />
       <section className="page-non-trouvée">
         <h1>404</h1>
-        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <h2>Oups! La page que vous demandez n'existe pas.</h2>
         <NavLink to="/" className="lien">
           Retourner sur la page d'accueil
         </NavLink>

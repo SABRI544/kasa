@@ -9,3 +9,13 @@
   width: 30px;
   margin-right: 5px;
 }
+
+@media screen and (max-width: 694px) {
+  .avis {
+    margin-top: 27px;
+  }
+  .avis img {
+    height: 15px;
+    width: 15px;
+  }
+}
