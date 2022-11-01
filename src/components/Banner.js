@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Banner = ({ imgsrc, title, altText }) => {
   return (
-    <section className="bannersection">
+    <section className="bannersection ">
       <img src={imgsrc} alt={altText} />
       <h1>{title}</h1>
     </section>

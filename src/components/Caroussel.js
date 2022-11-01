@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import arrowback from "../img/arrowback.png";
+import arrowforward from "../img/arrowforward.png";
 
 const Caroussel = (props) => {
   const { pictures, title } = props;
@@ -15,22 +17,29 @@ const Caroussel = (props) => {
   return (
     <section className="galerie">
       <div className="box">
-        <img
-          onClick={() => prevSlide()}
-          className="arrowback"
-          src="../img/arrowback.png"
-          alt="fleche de gauche"
-        />
+        {pictures.length <= 1 ? (
+          ""
+        ) : (
+          <div>
+            <img
+              onClick={() => prevSlide()}
+              className="arrowback"
+              src={arrowback}
+              alt="fleche de gauche"
+            />
+            <img
+              onClick={() => nextSlide()}
+              className="arrowforward"
+              src={arrowforward}
+              alt="fleche de droite"
+            />
+            <span className="nbtext">
+              {current + 1}/ {pictures.length}
+            </span>{" "}
+          </div>
+        )}
+
         <img src={pictures[current]} alt={title} className="galerieimg" />
-        <img
-          onClick={() => nextSlide()}
-          className="arrowforward"
-          src="../img/arrowforward.png"
-          alt="fleche de droite"
-        />
-        <span className="nbtext">
-          {current + 1}/ {pictures.length}
-        </span>
       </div>
     </section>
   );

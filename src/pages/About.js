@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Banner from "../components/Banner";
+import banniereabout from "../img/banniereabout.png";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
 const data = [
@@ -26,14 +26,14 @@ const About = () => {
   return (
     <div>
       <Header />
-      <Banner
-        imgsrc="./img/banniereabout.png"
-        altText="banniére montagne"
-        title=""
-      />
-      <div className="accordeonabout">
+
+      <div className="bannersection aboutbanner">
+        <img src={banniereabout} alt="banniére montagne" />
+      </div>
+
+      <div className="accordeonabout ">
         {data.map(({ titre, text }) => (
-          <Dropdown titre={titre} text={text} key={titre} />
+          <Dropdown key={text} titre={titre} text={text} />
         ))}
       </div>
 

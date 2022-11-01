@@ -40,11 +40,7 @@
     text-align: right;
     text-transform: uppercase;
     height: 17px;
-    gap: 27px;
-  }
-
-  .navigation a:nth-child(1) {
-    text-decoration-line: underline;
+    gap: 10px;
   }
 
   .logo img {

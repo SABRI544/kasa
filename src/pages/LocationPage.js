@@ -33,7 +33,8 @@ const LocationPage = () => {
             }
           }
           setError(true);
-        });
+        })
+        .catch((error) => console.log(error));
     },
     [id]
   );

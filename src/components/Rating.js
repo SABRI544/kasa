@@ -1,7 +1,7 @@
 import React from "react";
 
-import Etoilerouge from "../assets/img/rouge.svg";
-import Etoilegrise from "../assets/img/grise.svg";
+import Etoilerouge from "../img/rouge.svg";
+import Etoilegrise from "../img/grise.svg";
 
 const Rating = ({ rating }) => {
   const etoile = Array(5).fill(0);

@@ -1,12 +1,18 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Logements = () => {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios.get("/liste.json").then((res) => setData(res.data));
+  useEffect(function () {
+    fetch("/liste.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        return setData(data);
+      })
+      .catch((error) => console.log(error));
   }, []);
 
   return (
