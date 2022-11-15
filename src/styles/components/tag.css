@@ -1,11 +1,13 @@
 .tags {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 5px;
 }
 .tag {
   background: #ff6060;
   border-radius: 10px;
   margin-right: 5px;
+  margin-bottom: 5px;
   height: 25px;
   padding: 10px 20px 10px;
   display: flex;
@@ -30,8 +32,5 @@ p {
     line-height: 14px;
     font-size: 10px;
     line-height: 14px;
-  }
-  .tags {
-    width: max-content;
   }
 }

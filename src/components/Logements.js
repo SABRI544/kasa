@@ -20,6 +20,7 @@ const Logements = () => {
       {data.map((logements, index) => (
         <NavLink to={`/annonce/${logements.id}`} key={logements.id}>
           <div className="card" key={index}>
+            <div className="veil"></div>
             <img src={logements.cover} alt="logements" />
             <h3>{logements.title}</h3>
           </div>
